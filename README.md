@@ -4,6 +4,13 @@
 ### Course information:  Data structere
   * Arrays/陣列
   * Linked Lists/鏈結串列
+  * Stacks/堆疊
+  * Queues/佇列
+  * Tree/樹
+  * Heap/堆積
+  * Hashing/雜湊
+  * Sorting/排序
+  * Searching/搜尋
 ### name/student ID: 饒智/1133305
 
 ### Repository description: 這是存放資料結構課程相關的資訊
