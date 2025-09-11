@@ -11,6 +11,6 @@
   * Hashing/雜湊
   * Sorting/排序
   * Searching/搜尋
-### name/student ID: 饒智/1133305
+### name/student ID: *饒智/1133305*
 
 ### Repository description: 這是存放資料結構課程相關的資訊
