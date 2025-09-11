@@ -13,4 +13,4 @@
   * Searching/搜尋
 ### name/student ID: *饒智/1133305*
 
-### Repository description: 這是存放從資料結構課程學習到的相關的資訊
+### Repository description: 這是存放從資料結構課程學習到的相關的內容
