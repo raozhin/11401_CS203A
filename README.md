@@ -1,7 +1,7 @@
 # 11401_CS203A
 
 
-### Course information:  Data structere
+### Course information:  [Data structere]: https://portalfun.yzu.edu.tw/cosSelect/Cos_Plan.aspx?y=114&s=1&id=CS203&c=A
   * Arrays/陣列
   * Linked Lists/鏈結串列
   * Stacks/堆疊
