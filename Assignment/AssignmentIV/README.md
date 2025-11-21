@@ -1,4 +1,3 @@
-````markdown
 # Homework Assignment IV: Hash Function Design & Observation (C/C++ Version)
 
 This assignment focuses on the design and observation of hash functions using C/C++.
@@ -183,7 +182,3 @@ dog     3
 1.  **Algorithm Choice:** Designing hash functions requires balancing simplicity and effectiveness. The Multiplication Method proved effective for integers, while the Polynomial Rolling Hash worked well for strings.
 2.  **Table Size Importance:** My observations confirm that table size significantly impacts the uniformity of the hash distribution. Larger prime sizes drastically reduce collision probability.
 3.  **Implementation:** Using C/C++ math libraries (`cmath`/`math.h`) allowed for precise implementation of the multiplication method using floating-point operations.
-
-
-```
-```
