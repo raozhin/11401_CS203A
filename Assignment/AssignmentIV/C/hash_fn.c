@@ -17,8 +17,16 @@
 #include "hash_fn.h"
 #include <math.h>
 #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 int myHashInt(int key, int m) {
     unsigned long hash = 0;
+
+    if (m <= 0) {   // m大小檢查
+        fprintf(stderr, "Table size m must be positive\n");
+        return -1; 
+    }
+
     double a=sqrt(2); //multiplication method
     hash = floor(m*(fmod(key* a ,1)));
     return hash ; 
@@ -26,10 +34,26 @@ int myHashInt(int key, int m) {
 
 int myHashString(const char* str, int m) {
     unsigned long hash = 0;
+
+    if (m <= 0) {   // m大小檢查
+        cout<<"table size m must be positive."<<endl;
+        return -1; 
+    }
+
+    if (str == NULL) {// 字串指針檢查
+        cout<<"string is cannot be NULL"<<endl;
+        return -1; 
+    }
+
+    if (strlen(str) == 0) {// 空字串檢查
+        cout<<"string is empty"<<endl;
+        return -1; 
+    }
+
     while (*str != '\0') { //polynomial rolling hash
         hash = (hash*31+ *str);
         hash %= m; 
-        str++;     
+        str++;     // 移動指針到下一個字元
     }
     return hash;
 }
