@@ -16,7 +16,7 @@ evaluate their efficiency, and understand their applications in computer science
   double A = sqrt(2);
   // Extract the fractional part of (key * A) and multiply by m
   hash = floor(m * (fmod(key * A, 1)));
-````
+``
 
   - **Rationale:**
     I implemented the **Multiplication Method**. By multiplying the key by an irrational number (in this case, $\sqrt{2}$) and taking the fractional part, the bits of the key are "scrambled" effectively. This method is generally less sensitive to patterns in the input data (like consecutive integers) compared to the simple Division Method (`key % m`), especially when `m` is not a prime number.
@@ -209,4 +209,5 @@ dog     3
 <!-- end list -->
 
 ```
+
 ```
