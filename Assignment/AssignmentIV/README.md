@@ -13,14 +13,13 @@ evaluate their efficiency, and understand their applications in computer science
 - **Formula / Pseudocode:**
   ```cpp
   // Multiplication Method
-  double A = sqrt(2);
+  double A = sqrt(2)-1;
   // Extract the fractional part of (key * A) and multiply by m
   hash = floor(m * (fmod(key * A, 1)));
 ``
 
   - **Rationale:**
-    I implemented the **Multiplication Method**. By multiplying the key by an irrational number (in this case, $\sqrt{2}$) and taking the fractional part, the bits of the key are "scrambled" effectively. This method is generally less sensitive to patterns in the input data (like consecutive integers) compared to the simple Division Method (`key % m`), especially when `m` is not a prime number.
-
+    I implemented the **Multiplication Method**. By multiplying the key by an irrational number (in the range $(0, 1)$,this case: $\sqrt{2}-1$). Using an irrational number effectively "scrambles" the key's bits and breaks up input patterns, such as arithmetic progressions. The final index is obtained by multiplying this fractional part by the table size $m$ and taking the floor. This approach is generally more robust against patterned data than the simple division method ($key \pmod m$), especially when $m$ is not prime.
 ### Non-integer Keys (Strings)
 
   - **Formula / Pseudocode:**
@@ -33,7 +32,10 @@ evaluate their efficiency, and understand their applications in computer science
     }
     ```
   - **Rationale:**
-    I used a **Polynomial Rolling Hash** approach. The multiplier `31` is a small prime number widely used in hash functions (like in Java's String hash). This ensures that the order of characters matters (e.g., "cat" and "act" produce different hashes) and helps distribute keys uniformly across the table size `m`.
+    I used a **Polynomial Rolling Hash** approach. This method treats a string as a polynomial where each character's ASCII value is a coefficient, and a prime number $31$, a small prime commonly used in string hashing algorithms. This approach ensures that:
+    1.Order Matters: "cat" and "act" will produce different hashes because the characters are at different positions in the polynomial.
+
+    2.Uniform Distribution: The prime multiplier helps distribute the resulting hash values more uniformly across the table. It is crucial to apply the modulo operator (% m) at each step of the calculation to prevent integer overflow, which could skew the distribution.
 
 ## Experimental Setup
 
