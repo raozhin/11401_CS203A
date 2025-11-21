@@ -34,7 +34,7 @@ int myHashInt(int key, int m) {
         return -1; 
     }
 
-    double a=sqrt(2); //multiplication method
+    double a=sqrt(2)-1; //multiplication method
     hash = floor(m*(fmod(key* a ,1)));
     return hash ; 
 }

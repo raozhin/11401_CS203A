@@ -34,7 +34,7 @@ int myHashInt(int key, int m) {
     }
 
     // multiplication method const a，選擇無理數
-    double a=sqrt(2); 
+    double a=sqrt(2)-1; 
     hash = floor(m*(fmod(key* a ,1))); 
     return hash ;  
 }
