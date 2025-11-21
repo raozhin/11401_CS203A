@@ -130,6 +130,29 @@ Key     Index
 21      25
 22      4
 ...
+
+=== Hash Function Observation (C++ Version) ===
+
+=== Table Size m = 10 ===
+Key     Index
+-----------------
+21      6
+22      1
+...
+
+=== Table Size m = 11 ===
+Key     Index
+-----------------
+21      7
+22      1
+...
+
+=== Table Size m = 37 ===
+Key     Index
+-----------------
+21      25
+22      4
+...
 ```
 
 **Example output for strings:**
@@ -182,3 +205,8 @@ dog     3
 1.  **Algorithm Choice:** Designing hash functions requires balancing simplicity and effectiveness. The Multiplication Method proved effective for integers, while the Polynomial Rolling Hash worked well for strings.
 2.  **Table Size Importance:** My observations confirm that table size significantly impacts the uniformity of the hash distribution. Larger prime sizes drastically reduce collision probability.
 3.  **Implementation:** Using C/C++ math libraries (`cmath`/`math.h`) allowed for precise implementation of the multiplication method using floating-point operations.
+
+<!-- end list -->
+
+```
+```
