@@ -9,7 +9,7 @@
    Development History:
     - 2025/11/17: Initial implementation
 
-   Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+   Developer: rao zhin <s1133305@mail.yzu.edu.tw>
  */
 #ifndef HASH_FN_HPP
 #define HASH_FN_HPP

@@ -19,14 +19,14 @@
 #include <string.h>
 int myHashInt(int key, int m) {
     unsigned long hash = 0;
-    double a=sqrt(2);
+    double a=sqrt(2); //multiplication method
     hash = floor(m*(fmod(key* a ,1)));
     return hash ; 
 }
 
 int myHashString(const char* str, int m) {
     unsigned long hash = 0;
-    while (*str != '\0') {
+    while (*str != '\0') { //polynomial rolling hash
         hash = (hash*31+ *str);
         hash %= m; 
         str++;     
