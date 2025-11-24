@@ -1,4 +1,4 @@
-# Homework Assignment IV: Hash Function Design & Observation (C/C++ Version)
+<img width="526" height="539" alt="螢幕擷取畫面 2025-11-24 173923" src="https://github.com/user-attachments/assets/8119782a-f315-4898-84fc-d6e37982320d" /><img width="526" height="539" alt="螢幕擷取畫面 2025-11-24 173923" src="https://github.com/user-attachments/assets/c96bf501-77e5-4181-87b8-15e54f57eb8e" /># Homework Assignment IV: Hash Function Design & Observation (C/C++ Version)
 
 This assignment focuses on the design and observation of hash functions using C/C++.
 Students are expected to implement and analyze the behavior of hash functions,
@@ -80,7 +80,6 @@ Open a command prompt (cmd) or PowerShell in the project's root directory and us
     Makefile.bat all
     ```
 
-    [cite\_start][cite: 3]
 
   - **Build only the C version:**
 
@@ -88,7 +87,6 @@ Open a command prompt (cmd) or PowerShell in the project's root directory and us
     Makefile.bat c
     ```
 
-    [cite\_start][cite: 3]
 
   - **Build only the C++ version:**
 
@@ -96,7 +94,6 @@ Open a command prompt (cmd) or PowerShell in the project's root directory and us
     Makefile.bat cxx
     ```
 
-    [cite\_start][cite: 3]
 
 To remove all compiled executables and object files:
 
@@ -104,7 +101,6 @@ To remove all compiled executables and object files:
 Makefile.bat clean
 ```
 
-[cite\_start][cite: 3]
 
 ###Manual Compilation
 
@@ -118,7 +114,6 @@ If you prefer to compile manually, use the following commands in your command pr
     gcc -std=c23 -Wall -Wextra -Wpedantic -g -o C\hash_function.exe C\main.o C\hash_fn.o
     ```
 
-    [cite\_start][cite: 3]
 
   - **C++ Version:**
 
@@ -154,7 +149,10 @@ Run the generated executables from the project root directory:
 
 Below is a screenshot demonstrating the successful execution of both C and C++ versions of the program.
 
-    ```
+    ```<img width="593" height="545" alt="image" src="https://github.com/user-attachments/assets/9d30aba5-6db0-4606-8a89-75dce083b7d6" />
+    <img width="499" height="544" alt="image" src="https://github.com/user-attachments/assets/9b9e401c-c26c-4368-8185-dd5fa3e58de3" />
+
+  
 
 **Example output for integers:**
 
@@ -261,6 +259,7 @@ dog     3
 2.  **Prime is Prime:** The choice of table size `m` is as critical as the hash function itself. Always prefer a prime number for `m` to maximize the effectiveness of the hash function's distribution properties.
 
 <!-- end list -->
+
 
 
 
