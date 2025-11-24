@@ -149,81 +149,6 @@ Below is a screenshot demonstrating the successful execution of both C and C++ v
 
   
 
-**Example output for integers:**
-
-```text
-=== Hash Function Observation (C Version) ===
-
-=== Table Size m = 10 ===
-Key     Index
------------------
-21      6
-22      1
-...
-
-=== Table Size m = 11 ===
-Key     Index
------------------
-21      7
-22      1
-...
-
-=== Table Size m = 37 ===
-Key     Index
------------------
-21      25
-22      4
-...
-
-=== Hash Function Observation (C++ Version) ===
-
-=== Table Size m = 10 ===
-Key     Index
------------------
-21      6
-22      1
-...
-
-=== Table Size m = 11 ===
-Key     Index
------------------
-21      7
-22      1
-...
-
-=== Table Size m = 37 ===
-Key     Index
------------------
-21      25
-22      4
-...
-```
-
-**Example output for strings:**
-
-```text
-=== String Hash (m = 10) ===
-Key     Index
------------------
-cat     2
-dog     4
-...
-
-=== String Hash (m = 11) ===
-Key     Index
------------------
-cat     10
-dog     6
-...
-
-=== String Hash (m = 37) ===
-Key     Index
------------------
-cat     27
-dog     3
-...
-```
-
 **Detailed Array Output:**
 
   - **Integers:**
@@ -254,6 +179,7 @@ dog     3
 2.  **Prime is Prime:** The choice of table size `m` is as critical as the hash function itself. Always prefer a prime number for `m` to maximize the effectiveness of the hash function's distribution properties.
 
 <!-- end list -->
+
 
 
 
