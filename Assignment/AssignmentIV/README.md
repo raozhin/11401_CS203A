@@ -7,6 +7,12 @@ evaluate their efficiency, and understand their applications in computer science
 **Developer:** Rao zhin
 **Email:** s1133305@mail.yzu.edu.tw
 
+This project was developed and tested in a **Windows** environment.
+
+* **Operating System:** Windows
+* **Compiler:** GCC and G++ (MinGW-w64)
+* **Build Tool:** `Makefile.bat` (Windows batch script)
+* **IDE:** Visual Studio Code
 ## My Hash Function
 
 ### Integer Keys
@@ -54,58 +60,101 @@ evaluate their efficiency, and understand their applications in computer science
 | **11** | 7, 1, 5, 10, 3... | More uniform distribution due to prime size. |
 | **37** | 25, 4, 19, 34, 13... | Wide spread of indices, effectively utilizing the table space. |
 
-## Compilation, Build, Execution, and Output
+## Compilation, Build, and Execution (Windows)
 
-### Compilation
+This project is developed in a **Windows environment** and includes a `Makefile.bat` script to simplify the build process.
 
-The project uses a comprehensive Makefile that builds both C and C++ versions with proper flags:
+### Building the Project
 
-```bash
-# Build both C and C++ versions
-make all
+Open a command prompt (cmd) or PowerShell in the project's root directory and use the following commands:
 
-# Build only C version
-make c
+  - **Build both C and C++ versions (default):**
 
-# Build only C++ version
-make cxx
-```
-
-### Manual Compilation (if needed)
-
-  - Command for C:
-
-    ```bash
-    gcc -std=c23 -Wall -Wextra -Wpedantic -g -o C/hash_function C/main.c C/hash_fn.c -lm
+    ```cmd
+    Makefile.bat
     ```
 
-    *(Note: `-lm` added for math library linkage due to `sqrt` and `floor`)*
+    or
 
-  - Command for C++:
-
-    ```bash
-    g++ -std=c++23 -Wall -Wextra -Wpedantic -g -o CXX/hash_function_cpp CXX/main.cpp CXX/hash_fn.cpp
+    ```cmd
+    Makefile.bat all
     ```
 
-### Clean Build Files
+    [cite\_start][cite: 3]
 
-Remove all compiled files:
+  - **Build only the C version:**
 
-```bash
-make clean
+    ```cmd
+    Makefile.bat c
+    ```
+
+    [cite\_start][cite: 3]
+
+  - **Build only the C++ version:**
+
+    ```cmd
+    Makefile.bat cxx
+    ```
+
+    [cite\_start][cite: 3]
+
+To remove all compiled executables and object files:
+
+```cmd
+Makefile.bat clean
 ```
+
+[cite\_start][cite: 3]
+
+###Manual Compilation
+
+If you prefer to compile manually, use the following commands in your command prompt:
+
+  - **C Version:**
+
+    ```cmd
+    gcc -std=c23 -Wall -Wextra -Wpedantic -g -c C\main.c -o C\main.o
+    gcc -std=c23 -Wall -Wextra -Wpedantic -g -c C\hash_fn.c -o C\hash_fn.o
+    gcc -std=c23 -Wall -Wextra -Wpedantic -g -o C\hash_function.exe C\main.o C\hash_fn.o
+    ```
+
+    [cite\_start][cite: 3]
+
+  - **C++ Version:**
+
+    ```cmd
+    g++ -std=c++23 -Wall -Wextra -Wpedantic -g -c CXX\main.cpp -o CXX\main.o
+    g++ -std=c++23 -Wall -Wextra -Wpedantic -g -c CXX\hash_fn.cpp -o CXX\hash_fn.o
+    g++ -std=c++23 -Wall -Wextra -Wpedantic -g -o CXX\hash_function_cpp.exe CXX\main.o CXX\hash_fn.o
+    ```
+
+    [cite\_start][cite: 3]
 
 ### Execution
 
-Run the compiled binary:
+Run the generated executables from the project root directory:
 
-```bash
-./hash_function
-# or
-./hash_function_cpp
-```
+  - **Run C version:**
 
-### Result Snapshot
+    ```cmd
+    .\C\hash_function.exe
+    ```
+
+    [cite\_start][cite: 3]
+
+  - **Run C++ version:**
+
+    ```cmd
+    .\CXX\hash_function_cpp.exe
+    ```
+
+    [cite\_start][cite: 3]
+
+### Output Screenshot
+
+Below is a screenshot demonstrating the successful execution of both C and C++ versions of the program.
+
+    ```
 
 **Example output for integers:**
 
@@ -197,17 +246,21 @@ dog     3
     Hash table (m=37): [27, 3, 28, 20, 25, 23, 26, 29, 27, 18]
     ```
 
-## Analysis
+## Analysis & Reflection
 
-  - **Prime vs Non-prime `m`:** Prime table sizes (like 11 and 37) generally result in better distribution. Even when using the Multiplication Method (which is robust), using a prime `m` adds an extra layer of safety against collisions caused by input patterns.
-  - **Patterns:** In `m=10`, we can observe some repeating values (e.g., Index 1 appears multiple times for Integers), whereas `m=37` spreads the keys much more widely across the available range.
+### Analysis of Results
 
-## Reflection
+  - **Impact of Table Size (m):** The experimental results clearly show that **prime number table sizes (11, 37) yield significantly better key distribution** and fewer collisions compared to a composite size (10). This holds true even when using a robust algorithm like the Multiplication Method. The larger prime size (37) provided the best distribution, drastically reducing the collision probability.
+  - **Algorithm Effectiveness:**
+      - The **Multiplication Method** successfully handled the patterned integer input (arithmetic sequences), preventing the obvious patterns that a simple division hash might have produced.
+      - The **Polynomial Rolling Hash** effectively distinguished between short strings. The collisions observed at smaller `m` values are expected due to the Pigeonhole Principle, but the algorithm itself performed well, as evidenced by the near-perfect distribution at `m=37`.
 
-1.  **Algorithm Choice:** Designing hash functions requires balancing simplicity and effectiveness. The Multiplication Method proved effective for integers, while the Polynomial Rolling Hash worked well for strings.
-2.  **Table Size Importance:** My observations confirm that table size significantly impacts the uniformity of the hash distribution. Larger prime sizes drastically reduce collision probability.
-3.  **Implementation:** Using C/C++ math libraries (`cmath`/`math.h`) allowed for precise implementation of the multiplication method using floating-point operations.
+### Key Takeaways
+
+1.  **Balancing Act:** Designing a good hash function is a balance between simplicity, speed, and collision minimization. The chosen methods are standard and effective for their respective key types.
+2.  **Prime is Prime:** The choice of table size `m` is as critical as the hash function itself. Always prefer a prime number for `m` to maximize the effectiveness of the hash function's distribution properties.
 
 <!-- end list -->
+
 
 
