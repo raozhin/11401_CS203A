@@ -37,7 +37,7 @@ Instead of using the command line externally, I used VS Code's command palette:
 
 ### 3.3. Managing Changes (Source Control View)
 
-[cite_start]I utilized the **Source Control** view (Ctrl+Shift+G) in the sidebar for version control operations:
+I utilized the **Source Control** view (Ctrl+Shift+G) in the sidebar for version control operations:
 
 1.  **Staging**: Modified files appear under "Changes". Clicking the `+` button next to a file stages it for commit (equivalent to `git add`).
 2.  **Committing**: Entered a descriptive commit message in the message box above the staged changes and clicked the "Commit" button.
@@ -116,5 +116,6 @@ Since this assignment is developed in a Windows environment and provides a `Make
     .\C\hash_function.exe    # For the C version
     .\CXX\hash_function_cpp.exe  # For the C++ version
     ```
+
 
 
