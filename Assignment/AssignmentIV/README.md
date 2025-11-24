@@ -146,7 +146,7 @@ Run the generated executables from the project root directory:
 
 Below is a screenshot demonstrating the successful execution of both C and C++ versions of the program.
 
-    ```<img width="593" height="545" alt="image" src="https://github.com/user-attachments/assets/9d30aba5-6db0-4606-8a89-75dce083b7d6" />
+    <img width="593" height="545" alt="image" src="https://github.com/user-attachments/assets/9d30aba5-6db0-4606-8a89-75dce083b7d6" />
     <img width="499" height="544" alt="image" src="https://github.com/user-attachments/assets/9b9e401c-c26c-4368-8185-dd5fa3e58de3" />
 
   
@@ -256,6 +256,7 @@ dog     3
 2.  **Prime is Prime:** The choice of table size `m` is as critical as the hash function itself. Always prefer a prime number for `m` to maximize the effectiveness of the hash function's distribution properties.
 
 <!-- end list -->
+
 
 
 
