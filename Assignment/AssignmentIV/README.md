@@ -1,4 +1,4 @@
-<img width="526" height="539" alt="螢幕擷取畫面 2025-11-24 173923" src="https://github.com/user-attachments/assets/8119782a-f315-4898-84fc-d6e37982320d" /><img width="526" height="539" alt="螢幕擷取畫面 2025-11-24 173923" src="https://github.com/user-attachments/assets/c96bf501-77e5-4181-87b8-15e54f57eb8e" /># Homework Assignment IV: Hash Function Design & Observation (C/C++ Version)
+# Homework Assignment IV: Hash Function Design & Observation (C/C++ Version)
 
 This assignment focuses on the design and observation of hash functions using C/C++.
 Students are expected to implement and analyze the behavior of hash functions,
@@ -123,7 +123,6 @@ If you prefer to compile manually, use the following commands in your command pr
     g++ -std=c++23 -Wall -Wextra -Wpedantic -g -o CXX\hash_function_cpp.exe CXX\main.o CXX\hash_fn.o
     ```
 
-    [cite\_start][cite: 3]
 
 ### Execution
 
@@ -135,7 +134,6 @@ Run the generated executables from the project root directory:
     .\C\hash_function.exe
     ```
 
-    [cite\_start][cite: 3]
 
   - **Run C++ version:**
 
@@ -143,7 +141,6 @@ Run the generated executables from the project root directory:
     .\CXX\hash_function_cpp.exe
     ```
 
-    [cite\_start][cite: 3]
 
 ### Output Screenshot
 
@@ -259,6 +256,7 @@ dog     3
 2.  **Prime is Prime:** The choice of table size `m` is as critical as the hash function itself. Always prefer a prime number for `m` to maximize the effectiveness of the hash function's distribution properties.
 
 <!-- end list -->
+
 
 
 
