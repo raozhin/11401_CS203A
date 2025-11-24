@@ -102,9 +102,7 @@ Makefile.bat clean
 ```
 
 
-###Manual Compilation
-
-If you prefer to compile manually, use the following commands in your command prompt:
+##Manual Compilation
 
   - **C Version:**
 
@@ -256,6 +254,7 @@ dog     3
 2.  **Prime is Prime:** The choice of table size `m` is as critical as the hash function itself. Always prefer a prime number for `m` to maximize the effectiveness of the hash function's distribution properties.
 
 <!-- end list -->
+
 
 
 
