@@ -123,7 +123,7 @@ free(arr);
 
 ---
 
-6. 複雜度分析總表 (Complexity Analysis) 
+## 6. 複雜度分析總表 (Complexity Analysis) 
 
 | 操作 | 時間複雜度 (Time) | 空間複雜度 (Space) | 備註 |
 | --- | --- | --- | --- |
