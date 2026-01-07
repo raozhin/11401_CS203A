@@ -7,6 +7,9 @@
 * **目的**：解決陣列需要連續記憶體且只能用整數索引的限制，提供類似陣列 $O(1)$ 的快速存取，但支援任意型態的 Key。
 * **核心機制**：  $Index = Hash(Key) \pmod N$，其中 $N$ 為陣列大小。
 
+## Visualization  
+
+![hashing](./img/hashing.webp)
 
 ---
 
