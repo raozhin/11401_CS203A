@@ -1,4 +1,4 @@
-# 資料結構學習筆記：堆疊與佇列 (Stack & Queue)
+# 堆疊與佇列 (Stack & Queue)
 
 ## 1. 核心概念 (Concepts)
 
