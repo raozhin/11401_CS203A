@@ -5,7 +5,7 @@
 雜湊表 (Hash Table) 是一種透過**雜湊函數 (Hash Function)** 將**鍵 (Key)** 映射到陣列**索引 (Index)** 的資料結構，用於實現高效的 `Key-Value` 存取 。
 
 * **目的**：解決陣列需要連續記憶體且只能用整數索引的限制，提供類似陣列 $O(1)$ 的快速存取，但支援任意型態的 Key。
-* **核心機制**：$Index = Hash(Key) \pmod N$，其中 $N$ 為陣列大小。
+* **核心機制**：  $Index = Hash(Key) \pmod N$，其中 $N$ 為陣列大小。
 
 
 ---
@@ -36,7 +36,7 @@
 
 ## 4. 碰撞處理 (Collision Resolution)
 
-當兩個不同的 Key 被映射到同一個 Index 時 ($Hash(k1) == Hash(k2)$)，稱為**碰撞 (Collision)** 。
+當兩個不同的 Key 被映射到同一個 Index 時 ( $Hash(k1) == Hash(k2)$)，稱為**碰撞 (Collision)** 。
 
 ### 4.1 鏈結法 (Separate Chaining)
 每個 Bucket 實際上是一個指向**鏈結串列 (Linked List)** 的指標。當發生碰撞時，將新元素加到該 Bucket 的串列尾端 。
@@ -52,7 +52,7 @@
 1.  **線性探測 (Linear Probing)**: 檢查 $i+1, i+2, ...$
     * *缺點*：產生聚集 (Primary Clustering)。
 2.  **二次探測 (Quadratic Probing)**: 檢查 $i+1^2, i-1^2, i+2^2, ...$
-3.  **雙重雜湊 (Double Hashing)**: 使用第二個雜湊函數決定步伐，$i + 1 \times h_2(k), i + 2 \times h_2(k)...$
+3.  **雙重雜湊 (Double Hashing)**: 使用第二個雜湊函數決定步伐， $i + 1 \times h_2(k), i + 2 \times h_2(k)...$
 
 ---
 
@@ -115,7 +115,7 @@ void insert(struct HashTable* table, int key, int value) {
 ---
 
 ## 8. 應用場景 (Applications)
-1.  **符號表 (Symbol Table):** 編譯器用來儲存變數名稱與記憶體位址。
-2.  **資料庫索引 (Database Indexing):** 速查找紀錄 (Hash Index)。
-3.  **快取 (Caching):** 網頁快取、Memcached、Redis。
-4.  **集合 (Set) 實作:** 檢查元素是否存在 (如 Python 的 set 或 C++ std::unordered_set)。
+1.  **符號表 (Symbol Table) :** 編譯器用來儲存變數名稱與記憶體位址。
+2.  **資料庫索引 (Database Indexing) :** 速查找紀錄 (Hash Index)。
+3.  **快取 (Caching) :** 網頁快取、Memcached、Redis。
+4.  **集合 (Set) 實作 :** 檢查元素是否存在 (如 Python 的 set 或 C++ std::unordered_set)。
