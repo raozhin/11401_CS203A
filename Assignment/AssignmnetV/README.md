@@ -8,20 +8,16 @@
 
 本作業詳細探討了以下樹狀結構 ：
 
-* 
-**基礎樹狀結構**：一般樹 (General Tree)、二元樹 (Binary Tree) 。
+* **基礎樹狀結構**：一般樹 (General Tree)、二元樹 (Binary Tree) 。
 
 
-* 
-**結構限制樹**：完全二元樹 (Complete Binary Tree) 。
+* **結構限制樹**：完全二元樹 (Complete Binary Tree) 。
 
 
-* 
-**搜尋與平衡樹**：二元搜尋樹 (BST)、AVL 樹、紅黑樹 (Red-Black Tree) 。
+* **搜尋與平衡樹**：二元搜尋樹 (BST)、AVL 樹、紅黑樹 (Red-Black Tree) 。
 
 
-* 
-**堆積結構**：最大堆積 (Max Heap)、最小堆積 (Min Heap) 。
+* **堆積結構**：最大堆積 (Max Heap)、最小堆積 (Min Heap) 。
 
 
 
@@ -40,5 +36,6 @@
 
 
 ---
+
 
 *所有 AI 輔助學習過程均已記錄於 AI Usage Log。*
