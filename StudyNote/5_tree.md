@@ -10,7 +10,9 @@
     * **Linked List**：線性結構，每個節點指向下一個節點 (Next) 。
     * **Tree**：分支結構，每個節點可以指向多個子節點 (Children)，從「線性」轉變為「階層」。
 
+## Visualization  
 
+![tree](./img/tree.jpg)
 
 ---
 
