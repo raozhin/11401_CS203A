@@ -14,6 +14,9 @@
 
 * **循序存取 (Sequential Access)**：不支援隨機存取 (Random Access)，若要存取第 $k$ 個元素，必須從頭開始遍歷 (Traverse) 。
 
+## Visualization  
+
+![linkedlist](./img/linkedlist.png)
 ---
 
 ## 2. 抽象資料型別 (ADT: Linked List)
