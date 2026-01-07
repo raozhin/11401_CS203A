@@ -1,6 +1,6 @@
 # 堆積 (Heap)
 
-## 1. 核心定義 (Definition & Properties)
+## 1. 核心定義 (Definition)
 
 堆積 (Heap) 是一種特殊的樹狀結構，必須同時滿足以下兩個條件 ：
 
@@ -124,6 +124,4 @@ void heapify(int arr[], int n, int i) {
 * **搜尋慢**：尋找任意值 (非 Root) 需要 ，因為堆積只保證父子關係，不保證左右兄弟關係。
 * **非穩定排序**：Heap Sort 是 Unstable Sort。
 
-```
 
-```
