@@ -16,7 +16,7 @@
 
 ## Visualization  
 
-![linkedlist](./img/linkedlist.png)
+![linkedlist](./img/linkedist.png)
 ---
 
 ## 2. 抽象資料型別 (ADT: Linked List)
