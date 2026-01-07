@@ -153,10 +153,6 @@ void deleteNode(Node** head, int key) {
 
 ## 8. 常見應用場景 (Applications)
 
-1. 
-**實作其他資料結構**：堆疊 (Stack)、佇列 (Queue)、圖的鄰接表 (Adjacency List) 。
-
-
+1. **實作其他資料結構**：堆疊 (Stack)、佇列 (Queue)、圖的鄰接表 (Adjacency List) 。
 2. **動態記憶體配置**：如 OS 的 free list 管理。
-3. 
-**不需要快速查詢，但需要頻繁增刪**的資料集合 (例如：Todo List, 播放清單) 。
+3. **不需要快速查詢，但需要頻繁增刪**的資料集合 (例如：Todo List, 播放清單) 。
