@@ -6,16 +6,13 @@
 
 ### 關鍵特性
 
-* 
-**非連續記憶體 (Non-contiguous Memory)**：與陣列不同，鏈結串列的節點散落在堆積 (Heap) 的不同位置，透過指標 (Pointer) 串連 。
+* **非連續記憶體 (Non-contiguous Memory)**：與陣列不同，鏈結串列的節點散落在堆積 (Heap) 的不同位置，透過指標 (Pointer) 串連 。
 
 
-* 
-**動態大小 (Dynamic Size)**：不需要在建立時指定大小，可隨時新增或刪除節點，記憶體使用更有彈性 。
+* **動態大小 (Dynamic Size)**：不需要在建立時指定大小，可隨時新增或刪除節點，記憶體使用更有彈性 。
 
 
-* 
-**循序存取 (Sequential Access)**：不支援隨機存取 (Random Access)，若要存取第 $k$ 個元素，必須從頭開始遍歷 (Traverse) 。
+* **循序存取 (Sequential Access)**：不支援隨機存取 (Random Access)，若要存取第 $k$ 個元素，必須從頭開始遍歷 (Traverse) 。
 
 ---
 
@@ -71,13 +68,10 @@ Node* createNode(int value) {
 | 類型 | 描述 | 特點 |
 | --- | --- | --- |
 | **單向鏈結串列 (Singly Linked List)** | 每個節點只有一個 `next` 指標。 | 最節省空間，但只能單向遍歷 。
-
  |
 | **雙向鏈結串列 (Doubly Linked List)** | 每個節點有 `prev` (前一個) 與 `next` (下一個) 指標。 | 可雙向遍歷，刪除節點更方便 (因已知前驅節點)，但佔用更多記憶體 。
-
  |
 | **環狀鏈結串列 (Circular Linked List)** | 尾節點 (Tail) 的 `next` 指向頭節點 (Head)。 | 適用於 Round-Robin 排程或循環播放清單 。
-
  |
 
 ---
