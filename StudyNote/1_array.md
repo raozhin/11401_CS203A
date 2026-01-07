@@ -9,6 +9,9 @@
 * **固定大小 (對於靜態陣列)**：宣告時需決定大小，無法隨意擴充 (除非使用動態陣列) 。
 * **快取友善 (Cache Friendly)**：由於記憶體連續，CPU 在讀取時能有效利用空間局部性 (Spatial Locality)，減少 Cache Miss。
 
+## Visualization  
+
+![Array](./img/array.png)
 ---
 
 ## 2. 抽象資料型別 (ADT: Array)
