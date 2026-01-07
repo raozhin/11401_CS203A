@@ -36,7 +36,7 @@
 
 ## 4. 碰撞處理 (Collision Resolution)
 
-當兩個不同的 Key 被映射到同一個 Index 時 ( $Hash(k1) == Hash(k2)$)，稱為**碰撞 (Collision)** 。
+當兩個不同的 Key 被映射到同一個 Index 時 ( Hash(k1) == Hash(k2) )，稱為**碰撞 (Collision)** 。
 
 ### 4.1 鏈結法 (Separate Chaining)
 每個 Bucket 實際上是一個指向**鏈結串列 (Linked List)** 的指標。當發生碰撞時，將新元素加到該 Bucket 的串列尾端 。
@@ -58,7 +58,7 @@
 
 ## 5. 複雜度分析 (Complexity Analysis)
 
-令 $n$ 為元素數量，$m$ 為 Bucket 數量，負載因子 (Load Factor) $\alpha = n/m$ 。
+令 $n$ 為元素數量， $m$ 為 Bucket 數量，負載因子 (Load Factor) $\alpha = n/m$ 。
 
 | 操作 | 平均情況 (Expected) | 最壞情況 (Worst Case) | 說明 |
 | :--- | :---: | :---: | :--- |
