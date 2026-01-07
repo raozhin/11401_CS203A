@@ -11,6 +11,7 @@
     * **Tree**：分支結構，每個節點可以指向多個子節點 (Children)，從「線性」轉變為「階層」。
 
 ## Visualization  
+* 其他變化可參考![AssignmentV](https://github.com/raozhin/11401_CS203A/blob/main/Assignment/AssignmnetV/1133305_DS_Assignment_V.pdf)
 
 ![tree](./img/tree.jpg)
 
