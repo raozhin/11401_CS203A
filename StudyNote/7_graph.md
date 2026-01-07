@@ -12,7 +12,9 @@
 * **無向圖 (Undirected Graph)**：邊沒有方向性 ($A - B$ 代表 $A$ 與 $B$ 互通)，例如雙向道路。
 * **加權圖 (Weighted Graph)**：邊具有權重 (Weight/Cost)，例如路徑距離或傳輸成本。
 
+## Visualization  
 
+![graph](./img/graph.png)
 
 ---
 
