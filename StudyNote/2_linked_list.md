@@ -1,6 +1,6 @@
 # 鏈結串列 (Linked List)
 
-## 1. 核心定義與概念 (Definition & Concepts)
+## 1. 核心定義與特性 (Definition & Characteristics)
 
 鏈結串列 (Linked List) 是一種線性資料結構，由一系列的**節點 (Nodes)** 組成，這些節點在記憶體中**不必連續**存放 。
 
@@ -23,7 +23,7 @@
 * **Create()**: 初始化一個空的鏈結串列。
 * **Insert(x, pos)**: 在指定位置或特定節點後方插入值 $x$ 。
 * **Delete(pos)**: 移除指定位置的節點。
-* **Search(x)**: 尋找包含值 $x$的節點。
+* **Search(x)**: 尋找包含值 $x$ 的節點。
 * **Traverse()**: 從頭到尾走訪每一個節點 (通常用於列印或處理資料)。
 * **Update(pos, x)**: 修改指定位置節點的值。
 
@@ -101,7 +101,7 @@ Node* createNode(int value) {
 | **記憶體配置** | 連續 (Contiguous) | 非連續 (Non-contiguous) |
 | **大小調整** | 固定 (Static) / 成本高 (Dynamic Array resize) | 動態 (Dynamic)，隨時可增減 |
 | **隨機存取** | 支援 O(1)  | 不支援 O(n)  |
-| **插入/刪除 (中間)** | 慢 O(n)(需搬移資料) | 快 O(1)(僅改指標，假設已在該位置) |
+| **插入/刪除 (中間)** | 慢 O(n) (需搬移資料) | 快 O(1) (僅改指標，假設已在該位置) |
 | **記憶體利用率** | 高 (無額外指標) | 較低 (需儲存指標 overhead) |
 | **Cache 效能** | 佳 (Spatial Locality) | 差 (節點散落，易 Cache Miss) |
 
