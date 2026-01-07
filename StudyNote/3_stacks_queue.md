@@ -6,7 +6,7 @@
 
 | 特性 | 堆疊 (Stack) | 佇列 (Queue) |
 | :--- | :--- | :--- |
-| **原則** | **後進先出 (LIFO, Last-In-First-Out)** [cite: 60] | **先進先出 (FIFO, First-In-First-Out)** [cite: 69] |
+| **原則** | **後進先出 (LIFO, Last-In-First-Out)**  | **先進先出 (FIFO, First-In-First-Out)**  |
 | **比喻** | 疊盤子、電梯裡的人進出 | 排隊買票、印表機任務 |
 | **操作端點** | 單一端點 (Top) 進行推入與彈出 | 兩端操作：一端進 (Rear)，一端出 (Front) |
 
